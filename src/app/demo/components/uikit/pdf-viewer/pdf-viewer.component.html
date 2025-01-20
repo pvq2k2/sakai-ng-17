@@ -1,0 +1,53 @@
+<div class="card">
+    <!-- <div class="p-fluid">
+        <h5>Form</h5>
+        <div class="p-formgrid grid">
+            <div class="field col">
+                <label htmlFor="name2">Name</label>
+                <input pInputText id="name2" type="text" />
+            </div>
+            <div class="field col">
+                <label htmlFor="email2">Email</label>
+                <input pInputText id="email2" type="text" />
+            </div>
+            <div class="field col align-self-end">
+            </div>
+        </div>
+
+        <div class="card flex justify-content-center">
+            <p-menu #menu [model]="items" [popup]="true" />
+            <p-button (onClick)="menu.toggle($event)" icon="pi pi-file-export"/>
+        </div>
+    </div> -->
+
+        <p-tabView>
+            <p-tabPanel header="Header I">
+                <ngx-extended-pdf-viewer 
+                [src]="src"
+                [textLayer]="true"
+                [showPresentationModeButton]="true"
+                [showHandToolButton]="true"
+                [showBookModeButton]="false"
+                [showInfiniteScrollButton]="false"
+                [showSinglePageModeButton]="false"
+                [showWrappedScrollButton]="false"
+                [showDownloadButton]="false"
+                [showOpenFileButton]="false"
+                [showDrawEditor]="false"
+                [showHighlightEditor]="false"
+                [showTextEditor]="false"
+                [showStampEditor]="false"
+                [showRotateCcwButton]="false"
+                >
+              </ngx-extended-pdf-viewer>
+            </p-tabPanel>
+            <p-tabPanel header="Header II">
+                <pdf-viewer [src]="pdfSrc"
+                [render-text]="true"
+                [original-size]="false"
+                style="width: 400px; height: 500px"
+                ></pdf-viewer>
+            </p-tabPanel>
+        </p-tabView>
+
+</div>

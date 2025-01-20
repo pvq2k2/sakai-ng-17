@@ -1,0 +1,42 @@
+ngx-extended-pdf-viewer {
+    ::ng-deep {
+        #toolbarViewer {
+            background-color: white;
+        }
+        #toolbarViewerLeft {
+            display: flex;
+            align-items: center;
+        }
+        .html .toolbarField {
+            margin: 7px 0;
+        }
+        .secondaryToolbar {
+            padding: 6px;
+        }
+        .toolbarButton {
+            margin: 3px 0 4px !important;
+            &:not(:disabled):hover {
+                background-color: #0003;
+                border-color: #0006;
+            }
+        }
+
+        .dialogButton {
+            padding: 2px 11px;
+            &:hover {
+                background-color: #0003;
+                border-color: #0006;
+            }
+        }
+        .secondaryToolbarButton {
+            &:hover {
+                background-color: #0003;
+                border-color: #0006;
+            }
+            & > span {
+                height: 100%;
+                line-height: 30px;
+            }
+        } 
+    }
+}
