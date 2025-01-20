@@ -9,6 +9,10 @@ import { ButtonModule } from 'primeng/button';
 import { TabViewModule } from 'primeng/tabview';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { FormsModule } from '@angular/forms';
+import { TooltipModule } from 'primeng/tooltip';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
     imports: [
@@ -19,7 +23,12 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
         MenuModule,
         ButtonModule,
         TabViewModule,
-        PdfViewerModule
+        PdfViewerModule,
+        CommonModule,
+        FormsModule,
+        TooltipModule,
+        InputNumberModule,
+        DropdownModule
     ],
     declarations: [PdfViewerComponent]
 })
