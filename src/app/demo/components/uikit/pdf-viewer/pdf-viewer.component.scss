@@ -1,58 +1,57 @@
 ngx-extended-pdf-viewer {
     ::ng-deep {
-        #toolbarViewer {
-            background-color: white;
-        }
-        #toolbarViewerLeft {
-            display: flex;
-            align-items: center;
-        }
-        .html .toolbarField {
-            margin: 7px 0;
-        }
-        .secondaryToolbar {
-            padding: 6px;
-        }
-        .toolbarButton {
-            margin: 3px 0 4px !important;
-            &:not(:disabled):hover {
-                background-color: #0003;
-                border-color: #0006;
+        .html {
+            #mainContainer {
+                #toolbarViewer {
+                    background-color: white;
+                }
+                #toolbarViewerLeft {
+                    display: flex;
+                    align-items: center;
+                }
+                .toolbarField {
+                    margin: 7px 0;
+                    &[type="checkbox"] {
+                        margin: 11px 0;
+                    }
+                }
+                .toolbarLabel {
+                    margin: 7px 2px 4px 0;
+                }
+                .secondaryToolbar {
+                    padding: 6px;
+                }
+                .toolbarButton {
+                    margin: 3px 4px 4px !important;
+                    width: 28px;
+                    &:not(:disabled):hover {
+                        background-color: #0003;
+                        border-color: #0006;
+                    }
+                }
+                .secondaryToolbarButton {
+                    &:hover {
+                        background-color: #0003;
+                        border-color: #0006;
+                    }
+                    & > span {
+                        height: 100%;
+                        line-height: 30px;
+                    }
+                }
+                .textLayer .highlight.selected {
+                    background-color: rgba(0, 100, 0, 0.500);
+                }
+            }
+            #dialogContainer {
+                .dialogButton {
+                    padding: 2px 11px;
+                    &:hover {
+                        background-color: #0003;
+                        border-color: #0006;
+                    }
+                }
             }
         }
-
-        .dialogButton {
-            padding: 2px 11px;
-            &:hover {
-                background-color: #0003;
-                border-color: #0006;
-            }
-        }
-        .secondaryToolbarButton {
-            &:hover {
-                background-color: #0003;
-                border-color: #0006;
-            }
-            & > span {
-                height: 100%;
-                line-height: 30px;
-            }
-        } 
     }
-}
-
-.e-toolbar {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background: #fcfcfc;
-    border: 1px solid #e5e7eb;
-    box-shadow: none;
-    min-height: 38px;
-}
-
-.e-native-toolbar {
-    z-index: 9;
-    // margin-top: 20px;
-    height: 50px !important;
-    border-radius: 4px;
-    // position: absolute;
 }
